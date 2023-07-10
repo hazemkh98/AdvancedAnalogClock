@@ -1,0 +1,168 @@
+/*
+Place your custom CSS here
+*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+.App {
+  font-family: sans-serif;
+}
+
+.clock-container{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.clock {
+  width: 100%;
+  aspect-ratio:2/2;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+.clock::after {
+  background: #aaa;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  z-index: 999;
+}
+
+.hand {
+  position: absolute;
+  background-color: #000;
+  transform-origin: bottom center;
+  left: calc(50% - 2px); 
+}
+
+.hour_hand {
+  width: 4px;
+  height: calc(23% - 2px);
+  background: #222;
+  top: calc(64% - (37% - 2px));
+  transform-origin: bottom;
+  background-color: #222;
+  z-index: 99;
+}
+
+.min_hand {
+  width: 4px;
+  height: calc(36% - 2px);
+  background: #222;
+  top: calc(64% - (50% - 2px));
+  transform-origin: bottom;
+  z-index: 99;
+}
+
+.sec_hand {
+  
+  width: 2px;
+  height: calc(40% - 2px);
+  background: red;
+  top: calc(70% - (60% - 2px)); 
+  transform-origin: bottom;
+  z-index: 99;
+}
+
+.clock span {
+  position: absolute;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.Show_AM_PM{
+  position: absolute;
+  top: 75%;
+  left: 47%;
+}
+
+.twelve {
+  top: 2%;
+  left: 46%;
+}
+
+.one {
+  top: 10%;
+  right: 26%;
+}
+
+.eleven {
+  top: 10%;
+  left: 26%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.three {
+  right: 7%;
+  top: 46%;
+}
+
+.four {
+  right: 12%;
+  top: 66%;
+}
+
+.five {
+  right: 25%;
+  bottom: 10%;
+}
+
+.six {
+  bottom: 2%;
+  left: 50%;
+}
+
+.seven {
+  left: 30%;
+  bottom: 10%;
+}
+
+.eight {
+  left: 14%;
+  top: 66%;
+}
+
+.nine {
+  left: 7%;
+  top: 46%;
+}
+
+.ten {
+  top: 25%;
+  left: 10%;
+}
+
+
+.flagCountryInside{
+  position: absolute;
+    width: fit-content;
+    top: 47%;
+    left: 64%;
+}
+
+.belowClock{
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  justify-content: center;
+}

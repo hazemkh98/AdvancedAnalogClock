@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="avertra.analogclock.AnalogClock"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Advanced Analog Clock</name>
+    <description>This widget help user to create Analog Oclick with diffrent Time zone</description>
+    
+    <icon>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</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="Cuntry" type="string" required="false">
+                <caption>Static Country Name</caption>
+                <description>Continent_name/city_name    Ex: Asia/Amman , America/New_York </description>
+            </property>
+                <property key="regionCity" type="attribute" required="false">
+                    <caption>Dynamic Country Name</caption>
+                    <description>Choose the attribut of region that must be store as Continent_name/city_name</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+        </propertyGroup>
+
+         <propertyGroup caption="Style">
+            <propertyGroup caption="Sizing">
+                <property key="widthofclock" type="integer" defaultValue="250">
+                        <caption>Width of the clock </caption>
+                        <description>you can choose any width for the clock</description>
+                    </property>
+                <property key="borderradius" type="integer" defaultValue="50">
+                        <caption>Border radius for Clock</caption>
+                        <description>That make the clock look like circle or square </description>
+                </property>
+            </propertyGroup>
+         
+        <propertyGroup caption="Color"> 
+            <property key="clockbg" type="string" defaultValue="#fff">
+                <caption>Color of Clock</caption>
+                <description>Ex: #fff or white</description>
+            </property>
+            <property key="hourHand" type="string" defaultValue="#000">
+                <caption>Color of hour hand</caption>
+                <description>Ex: #000 or black</description>
+            </property>
+            <property key="minutHand" type="string" defaultValue="#000">
+                <caption>Color of minute hand</caption>
+                <description>Ex: #000 or black</description>
+            </property>
+            <property key="secondHand" type="string" defaultValue="red">
+                <caption>Color of second hand</caption>
+                <description>Ex: #ff0000 or red</description>
+            </property>
+            <property key="numbervalue" type="string" defaultValue="#000">
+                <caption>color of number value</caption>
+                <description>Ex: #000 or black</description>
+            </property>
+        </propertyGroup>
+</propertyGroup>
+
+<propertyGroup caption="Extras">
+            <property key="showAM" type="boolean" defaultValue="false">
+	            <caption>Show AM/PM</caption>
+	            <description>Appear AM/PM inside the clock circle</description>
+            </property>
+            <property key="showTime" type="boolean" defaultValue="false">
+	            <caption>Show full time </caption>
+	            <description>Show the day and the time below the clock circle ex: Friday 19:31:04</description>
+            </property>
+            <property key="Showflag" type="string"  required="false">
+	            <caption>Show Country Flag</caption>
+	            <description>Write Country Name you want to show their flag</description>
+            </property>
+            <property key="Showflaginside" type="boolean"  defaultValue="false">
+	            <caption>Country Flag inside clock </caption>
+	            <description>To appear the country flag inside the clock circle instead of below the clock</description>
+            </property>
+   </propertyGroup>         
+         
+    </properties>
+
+</widget>
